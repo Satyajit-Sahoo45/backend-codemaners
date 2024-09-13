@@ -14,7 +14,10 @@ const app: Application = express();
 app.use(
   cors({
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"],
-    origin: ["http://localhost:3000"],
+    origin: [
+      "http://localhost:3000",
+      "https://frontend-codemancers.vercel.app",
+    ],
     credentials: true,
   })
 );
